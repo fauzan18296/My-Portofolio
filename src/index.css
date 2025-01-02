@@ -7,8 +7,3 @@
 html {
   @apply font-Titillium; /* Terapkan default font sans ke seluruh HTML */
 }
-@layer components {
-.size-13 {
-  @apply w-9;
-}
-}
