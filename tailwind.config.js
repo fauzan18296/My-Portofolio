@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         "Poppins": ["Poppins", "sans-serif"],
         "Titillium": ["Titillium", "sans-serif"],
+      },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(to bottom,to right #4c1d95,to right #f9a8d4,to right #dc2626 ,to right #FFC107)",
       }
     },
   },
