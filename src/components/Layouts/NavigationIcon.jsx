@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types'
+import Links from '../Ui/Links'
 
-const NavigationIcon = ({ classname, icon, name, href }) => {
+const NavigationIcon = ({  icon, name, url }) => {
   return (
     <div className="hidden md:flex bg-slate-600 p-1 mx-1  rounded-md">
-      <a className={classname} href={href}>{name}<i className='size-4/5' data-feather={icon}></i></a>
+      <Links classname='flex items-center rounded-md  text-white  font-bold' href={ url }>{name}<i className='size-4/5' data-feather={icon}></i></Links>
       </div>
   )
 }
 
 NavigationIcon.propTypes = {
-  classname: PropTypes.string,
   icon: PropTypes.string,
   name: PropTypes.string,
-  href: PropTypes.any
+  url: PropTypes.any
 }
 
 export default NavigationIcon

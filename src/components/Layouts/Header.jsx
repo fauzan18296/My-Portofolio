@@ -19,8 +19,8 @@ const Header = () => {
         <a className='text-xl text-indigo-400 font-bold' href="#project">Projects</a>
       </Nav>
 
-      <NavigationIcon classname='flex items-center rounded-md  text-white  font-bold' icon='github' name='Github' href='https://github.com/fauzan18296' />
-      <NavigationIcon classname='flex items-center rounded-md text-white font-bold' icon='instagram' href='https://www.instagram.com/ahd_fauzan18/' name='Instagram' />
+      <NavigationIcon icon='github' name='Github' url='https://github.com/fauzan18296' />
+      <NavigationIcon  icon='instagram' url='https://www.instagram.com/ahd_fauzan18/' name='Instagram' />
 
      <ResponsiveNavbar />
       </header>
