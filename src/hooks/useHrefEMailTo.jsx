@@ -1,10 +1,10 @@
 import {useState} from 'react'
 
 export const useHrefEMailTo = () => {
-   const [btnLocate, setBtnLocate] = useState("mailto:fauzan18296@gmail.com")
+   const [btnLocate, setBtnLocate] = useState("fauzan18296@gmail.com")
 
   const handleBtnLocate = () => {
-    setBtnLocate(window.location.href = btnLocate)
+    setBtnLocate(location.href = `mailto:${btnLocate}`)
   }
   return handleBtnLocate
 }
