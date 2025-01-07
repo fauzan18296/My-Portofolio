@@ -1,25 +1,35 @@
 import Nav from './Nav'
 import { useFeatherIcons } from '../../hooks/config/icons/useIcon.config'
+import { useResponsiveNavbar } from '../../hooks/useResponsiveNavbar'
+import Button from '../Ui/Button'
+import Links from '../Ui/Links'
 import NavigationIcon from './NavigationIcon'
 
 const Header = () => {
+  const { openNav, toggleNav } = useResponsiveNavbar()
     useFeatherIcons()
   return (
     <header className='flex justify-between items-center bg-white w-full px-3 shadow-xl z-50 fixed'>
-      <div className='mx-3 max-tablet:mx-6 max-mobile:mx-1'>
-        <a href="#" className='flex gap-4 '>
+      <div className='flex justify-center items-center mx-2 '>
+        <a href="#" className='flex gap-4 font-extrabold  '>
           <img className='w-16 max-tablet:w-12' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
-           <p className='text-xl self-center font-extrabold font-Poppins max-tablet:text-sm'>Portfolio<span className='text-indigo-400 '>_Fauzan</span></p>
+           <p className='text-xl font-extrabold self-center max-tablet:text-base'>Portfolio<span className='text-indigo-400 '>_Fauzan</span></p>
         </a>
         </div>
       <Nav>
-        <a className='text-xl text-indigo-400  font-bold' href="#about">About</a>
-        <a className='text-xl text-indigo-400  font-bold' href="#skill">Skill</a>
-        <a className='text-xl text-indigo-400 font-bold' href="#project">Projects</a>
+          <div className={`md:container md:flex md:justify-end md:items-center md:static md:gap-10 max-tablet:flex max-tablet:flex-col top-full justify-evenly items-center max-tablet:h-screen max-tablet:w-8/12 bg-white rounded-e-xl absolute p-[1rem] ${!openNav ? "-left-full" : "left-0"} z-10 max-tablet:gap-2 max-tablet:shadow-xl max-tablet:text-base transition-all duration-100 ease-in-out delay-75`}>
+        <a className='text-lg font-semibold  text-indigo-400 ' href="#about">About</a>
+        <a className='text-lg font-semibold  text-indigo-400' href="#skill">Skill</a>
+          <a className='text-lg font-semibold  text-indigo-400' href="#project">Projects</a>
+          <div className='flex gap-x-2 font-Poppins '>
+          <Links classname="flex max-tablet:text-base bg-slate-600  p-1  rounded-md  text-white  font-bold"  href='https://github.com/fauzan18296'><NavigationIcon classname="size-5 max-mobile:size-4" name="Github" icon="github" /></Links>
+            <Links classname="flex max-mobile:text-md  bg-slate-600  p-1  rounded-md  text-white max-tablet:text-base  font-bold" href='https://github.com/fauzan18296'><NavigationIcon classname="size-5 max-mobile:size-4" name="Instagram" icon="instagram" /></Links>
+            </div>
+        </div>
       </Nav>
-
-      <NavigationIcon classname='flex items-center rounded-md  text-white  font-bold' icon='github' name='Github' url='https://github.com/fauzan18296' />
-      <NavigationIcon classname='flex items-center rounded-md  text-white  font-bold'  icon='instagram' url='https://www.instagram.com/ahd_fauzan18/' name='Instagram' />
+        <Button classname="text-indigo-400 md:hidden max-tablet:block cursor-pointer mx-2" type="button" onClick={ toggleNav }>
+   <i className="size-9/12" data-feather="menu"></i>
+      </Button>
       </header>
   )
 }
