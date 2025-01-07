@@ -10,8 +10,6 @@ const Header = () => {
     useFeatherIcons()
   return (
     <header className='flex justify-between items-center bg-white w-full px-3 shadow-xl z-50 fixed'>
-      <div className='flex justify-center items-center mx-2 '>
-        <a href="#" className='flex gap-4 font-extrabold  '>
       <div className='mx-3 max-tablet:mx-6 max-mobile:mx-1'>
         <a href="#" className='flex gap-4 '>
           <img className='w-16 max-tablet:w-12' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
