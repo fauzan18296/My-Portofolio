@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  @apply font-Cardo; /* Terapkan default font sans ke seluruh HTML */
+  @apply font-Lora; /* Terapkan default font sans ke seluruh HTML */
+  @apply scroll-smooth;
 }

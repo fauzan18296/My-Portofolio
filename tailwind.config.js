@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         "Poppins": ["Poppins", "sans-serif"],
-        "Cardo": ["Cardo", "sans-serif"],
+        "Lora": ["Lora", "sans-serif"],
       },
     },
   },
