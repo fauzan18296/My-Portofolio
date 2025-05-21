@@ -5,6 +5,6 @@
 @tailwind utilities;
 
 html {
-  @apply font-Lora; /* Terapkan default font sans ke seluruh HTML */
+  @apply font-Poppins; /* Terapkan default font sans ke seluruh HTML */
   @apply scroll-smooth;
 }

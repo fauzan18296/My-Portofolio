@@ -13,11 +13,11 @@ const Header = () => {
       <div className='mx-3 max-tablet:mx-6 max-mobile:mx-1'>
         <a href="#" className='flex gap-4 '>
           <img className='w-16 max-tablet:w-12' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
-           <p className='text-xl font-extrabold self-center max-tablet:text-base'>Portfolio<span className='text-indigo-400 '>_Fauzan</span></p>
+           <p className='text-2xl font-extrabold self-center max-tablet:text-base'>Zan<span className='text-indigo-400 '>_Dev</span></p>
         </a>
         </div>
       <Nav>
-          <div className={`md:container md:flex md:justify-end md:items-center md:static md:gap-10 max-tablet:flex max-tablet:flex-col top-full justify-evenly items-center max-tablet:h-screen max-tablet:w-8/12 bg-white rounded-e-xl absolute p-[1rem] ${!openNav ? "-left-full" : "left-0"} z-10 max-tablet:gap-2 max-tablet:shadow-xl max-tablet:text-base transition-all duration-100 ease-in-out delay-75`}>
+          <div className={`md:container md:flex md:justify-end md:items-center md:static md:gap-10 max-tablet:flex max-tablet:flex-col top-full justify-evenly items-center max-tablet:h-svh max-tablet:w-8/12 bg-white rounded-e-xl absolute p-[1rem] ${!openNav ? "-left-full" : "left-0"} z-10 max-tablet:gap-2 max-tablet:shadow-xl max-tablet:text-base transition-all duration-100 ease-in-out delay-75`}>
         <a className='text-lg font-semibold  text-indigo-400 ' href="#about">About</a>
         <a className='text-lg font-semibold  text-indigo-400' href="#skill">Skill</a>
           <a className='text-lg font-semibold  text-indigo-400' href="#project">Projects</a>

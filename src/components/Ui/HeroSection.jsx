@@ -3,7 +3,7 @@ import HeroImage from '../../assets/images/Img-Hero-Section/Hero_Section.avif'
 
 const HeroSection = ({ children }) => {
   return (
-    <div className="flex justify-around items-center min-h-screen md:max-w-screen-xl max-w-screen-sm max-tablet:flex-col max-tablet:justify-evenly px-2">
+    <div className="flex justify-around items-center min-h-dvh md:max-w-screen-xl max-w-screen-sm max-tablet:flex-col max-tablet:justify-evenly px-2">
       { children }
      <img className='w-2/5 max-tablet:w-10/12' src={HeroImage} alt="Fauzan" />
     </div>
