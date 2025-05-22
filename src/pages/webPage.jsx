@@ -1,6 +1,7 @@
 import Header from '../components/Layouts/Header'
 import HeroSection from '../components/Ui/HeroSection'
 import AboutSection from '../components/Ui/AboutSection'
+import SkillsSection from '../components/Ui/SkillsSection'
 import { Typewriter } from 'react-simple-typewriter'
 import Links from '../components/Ui/Links'
 
@@ -25,7 +26,8 @@ const WebPage = () => {
           <Links classname='font-Poppins font-semibold max-tablet:text-base tracking-widest flex justify-center items-center md:text-md relative w-28 bg-indigo-400 px-2 py-1  text-white rounded-md shadow-md mt-2 max-tablet:text-md hover:bg-indigo-500 focus:bg-indigo-500  active:bg-indigo-500' href='mailto:fauzan18296@gmail.com'>Hire Me!</Links>
         </div>
       </HeroSection>
-      <AboutSection></AboutSection>
+      <AboutSection /> 
+        <SkillsSection />
       </>
     )
 }

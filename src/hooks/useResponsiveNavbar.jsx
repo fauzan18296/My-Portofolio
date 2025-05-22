@@ -5,5 +5,12 @@ export const useResponsiveNavbar = () => {
   const toggleNav = () => {
     setOpenNav(!openNav)
   }
-  return {openNav, toggleNav}
+
+  const handelNavigation = (event) => {
+    if (!event.target.closest('#nav-container') && !event.target.closest('#icon-menu')) { 
+      setOpenNav(false);
+    }
+  }
+  
+  return {openNav, toggleNav, handelNavigation}
 }
