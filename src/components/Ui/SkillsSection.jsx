@@ -1,9 +1,9 @@
-import html from '../../../public/html-5.avif'
-import css from '../../../public/css-3.avif'
-import javascript from '../../../public/icons8-javascript-512.avif'
-import tailwindcss from '../../../public/icons8-tailwind-css-512.avif'
-import react from '../../../public/icons8-react-512.avif'
-import git from '../../../public/icons8-git-512.avif'
+import html from '/html-5.avif'
+import css from '/css-3.avif'
+import javascript from '/icons8-javascript-512.avif'
+import tailwindcss from '/icons8-tailwind-css-512.avif'
+import react from '/icons8-react-512.avif'
+import git from '/icons8-git-512.avif'
 const SkillsSection = () => {   
   return (
     <div id="skill" className="scroll-mt-20 min-h-dvh"> 

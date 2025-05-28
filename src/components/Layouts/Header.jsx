@@ -25,7 +25,7 @@ const Header = () => {
           <a className='text-lg font-semibold  text-indigo-400' href="#project">Projects</a>
           <div className='flex gap-x-2 font-Poppins '>
           <Links classname="flex max-tablet:text-base bg-slate-600  p-1  rounded-md  text-white  font-bold"  href='https://github.com/fauzan18296'><NavigationIcon classname="size-5 max-mobile:size-4" name="Github" icon="github" /></Links>
-            <Links classname="flex max-mobile:text-md  bg-slate-600  p-1  rounded-md  text-white max-tablet:text-base  font-bold" href='https://github.com/fauzan18296'><NavigationIcon classname="size-5 max-mobile:size-4" name="Instagram" icon="instagram" /></Links>
+            <Links classname="flex max-mobile:text-md  bg-slate-600  p-1  rounded-md  text-white max-tablet:text-base  font-bold" href='https://www.instagram.com/ahd_fauzan18/?hl=id'><NavigationIcon classname="size-5 max-mobile:size-4" name="Instagram" icon="instagram" /></Links>
             </div>
         </div>
       </Nav>
