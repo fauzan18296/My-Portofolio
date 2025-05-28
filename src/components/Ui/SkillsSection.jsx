@@ -1,12 +1,42 @@
-
+import html from '../../../public/html-5.avif'
+import css from '../../../public/css-3.avif'
+import javascript from '../../../public/icons8-javascript-512.avif'
+import tailwindcss from '../../../public/icons8-tailwind-css-512.avif'
+import react from '../../../public/icons8-react-512.avif'
+import git from '../../../public/icons8-git-512.avif'
 const SkillsSection = () => {   
   return (
     <div id="skill" className="scroll-mt-20 min-h-dvh"> 
-      <h1 className="text-3xl text-indigo-400 font-bold text-center">My Skills</h1>
-      <div className="container justify-center items-center ">
-          {/* section content skill shape Icon Skill dan title icon skill. */}
+      <h1 className="text-2xl text-indigo-400 mb-1 font-bold text-center max-mobile:text-lg">My Skills</h1>
+      <div className="container flex justify-center items-center">
+        <div className='flex justify-center items-center flex-wrap'>
+        <div className='flex justify-center items-center flex-col'>
+          <img className='w-40' src={html} alt={html} />
+          <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>Html</h2>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <img className='w-40' src={javascript} alt={javascript} />
+          <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>Javascript</h2>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <img className='w-40' src={css} alt={css} />
+          <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>Css</h2>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <img className='w-40' src={tailwindcss} alt={tailwindcss} />
+          <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>TailwindCss</h2>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <img className='w-40' src={react} alt={react} />
+          <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>React</h2>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <img className='w-40' src={git} alt={git} />
+          <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>Git</h2>
+          </div>
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 export default SkillsSection
