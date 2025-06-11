@@ -2,6 +2,7 @@ import Header from '../components/Layouts/Header'
 import HeroSection from '../components/Ui/HeroSection'
 import AboutSection from '../components/Ui/AboutSection'
 import SkillsSection from '../components/Ui/SkillsSection'
+import ProjectsSection from '../components/Ui/ProjectsSection'
 import { Typewriter } from 'react-simple-typewriter'
 import Links from '../components/Ui/Links'
 
@@ -28,6 +29,7 @@ const WebPage = () => {
       </HeroSection>
       <AboutSection /> 
         <SkillsSection />
+        <ProjectsSection/>
       </>
     )
 }
