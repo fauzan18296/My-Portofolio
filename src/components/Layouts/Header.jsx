@@ -6,9 +6,9 @@ import Links from '../Ui/Links'
 import NavigationIcon from './NavigationIcon'
 
 const Header = () => {
-  const { openNav, toggleNav, handelNavigation } = useResponsiveNavbar()
+  const { openNav, toggleNav, handleNavigation } = useResponsiveNavbar()
   useFeatherIcons()
-  document.addEventListener('click', handelNavigation)
+  document.addEventListener('click', handleNavigation)
 
   return (
     <header id='nav-container' className='flex justify-between items-center bg-white w-full px-3 shadow-xl z-50 fixed'>
