@@ -14,7 +14,7 @@ const WebPage = () => {
       <Header />
       <HeroSection>
         <div className='mx-6 text-base py-10'>
-          <h1 className='text-black text-xl max-tablet:text-lg'>Hello, I am <span className='text-indigo-400 font-bold'>
+          <h1 className='text-black text-xl'>Hello, I am <span className='text-indigo-400 font-bold'>
             <Typewriter
               words={Introduction}
               loop={false}

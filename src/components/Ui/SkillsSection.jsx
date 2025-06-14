@@ -7,7 +7,7 @@ import git from '/icons8-git-512.avif'
 const SkillsSection = () => {   
   return (
     <div id="skill" className="scroll-mt-20 min-h-dvh"> 
-      <h1 className="text-2xl text-indigo-400 mb-1 font-bold text-center max-mobile:text-lg">My Skills</h1>
+      <h1 className="text-2xl text-indigo-400 mb-1 font-bold text-center max-mobile:text-xl">My Skills</h1>
       <div className="container flex justify-center items-center">
         <div className='flex justify-center items-center flex-wrap'>
         <div className='flex justify-center items-center flex-col'>
