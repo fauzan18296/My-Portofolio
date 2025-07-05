@@ -25,7 +25,7 @@ const websiteProjects = () => {
       </div>
       <div className='container flex justify-center items-center'>
         <div className='flex justify-center items-center'>
-          <div className='grid grid-cols-3 gap-x-24 mx-5'>
+          <div className='grid grid-cols-3 max-mobile:grid-cols-1 gap-x-24 mx-5'>
             {
               websiteProject.length && websiteProject.map(project => {
                 return (
