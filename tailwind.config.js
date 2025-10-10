@@ -12,7 +12,18 @@ export default {
       },
       fontFamily: {
         "Poppins": ["Poppins", "sans-serif"],
-        "Lora": ["Lora", "sans-serif"],
+        "Titillium": ["Titillium Web"],
+        "Gloria": ["Gloria Hallelujah", "sans-serif"]
+      },
+      keyframes: {
+        rotateImg: {
+          '0%': { transform: 'rotateX(0deg) rotateY(0deg)' },
+          '50%': { transform: 'rotateX(180deg) rotateY(180deg)' },
+          '100%': { transform: 'rotateX(360deg) rotateY(360deg)' },
+        }
+      },
+      animation: {
+        rotateImg: "rotateImg 4s linear infinite" 
       },
     },
   },

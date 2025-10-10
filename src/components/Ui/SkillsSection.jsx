@@ -6,10 +6,10 @@ import react from '/icons8-react-512.avif'
 import git from '/icons8-git-512.avif'
 const SkillsSection = () => {   
   return (
-    <div id="skill" className="scroll-mt-20 min-h-dvh w-full"> 
-      <h1 className="text-2xl text-white mb-1 font-bold text-center max-mobile:text-xl">My Skills</h1>
+    <div id="skill" className="flex justify-center items-center flex-col scroll-mt-20 min-h-dvh w-full"> 
+      <h1 className="text-2xl -tracking-tighter text-white font-Poppins mb-1 font-bold text-center max-mobile:text-xl">My Skills</h1>
       <div className="container flex justify-center items-center w-full">
-        <div className='grid grid-cols-6 max-mobile:grid-cols-2 mx-auto'>
+        <div className='grid grid-cols-4 max-mobile:grid-cols-2'>
         <div className='flex justify-center items-center flex-col'>
           <img className='w-40' src={html} alt={html} />
           <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>Html</h2>
@@ -33,7 +33,7 @@ const SkillsSection = () => {
         <div className='flex justify-center items-center flex-col'>
         <img className='w-40' src={git} alt={git} />
           <h2 className='font-Poppins font-semibold text-xl tracking-wider max-mobile:text-base'>Git</h2>
-          </div>
+            </div>
           </div>
         </div>
       </div>

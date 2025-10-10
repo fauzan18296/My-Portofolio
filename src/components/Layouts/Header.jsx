@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <header id='nav-container' className='flex justify-between items-center bg-neutral-800 w-full px-3 shadow-xl z-50 fixed'>
       <div className='mx-3 max-tablet:mx-6 max-mobile:mx-1'>
-        <a href="#" className='flex gap-4 '>
-          <img className='w-16 max-tablet:w-12' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
-           <p className='text-2xl font-extrabold self-center max-tablet:text-lg'>Zan<span className='text-indigo-300 '>_Dev</span></p>
+        <a href="#" className='flex gap-4'>
+          <img className='w-16 max-tablet:w-12 max-mobile:w-10' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
+           <p className='text-2xl font-extrabold font-Gloria  self-center max-tablet:text-lg'>Zan<span className='text-indigo-300 '>_Dev</span></p>
         </a>
         </div>
       <Nav>
