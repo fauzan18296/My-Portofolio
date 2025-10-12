@@ -17,9 +17,8 @@ export default {
       },
       keyframes: {
         rotateImg: {
-          '0%': { transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)' },
-          '50%': { transform: 'rotateX(180deg) rotateY(180deg) rotateZ(180deg)' },
-          '100%': { transform: 'rotateX(360deg) rotateY(360deg) rotateZ(360deg)' },
+       '0%':   { transform: 'rotateY(0deg) translateZ(120px) rotateY(0deg)' },
+    '100%': { transform: 'rotateY(360deg) translateZ(120px) rotateY(-180deg)' },
         }
       },
       animation: {
