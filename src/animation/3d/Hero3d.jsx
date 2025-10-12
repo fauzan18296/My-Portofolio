@@ -13,7 +13,7 @@ const Hero3D = () => {
     const camera = new THREE.PerspectiveCamera(
       75, // FOV atau Field Of View
       mountRef.current.clientWidth / mountRef.current.clientHeight, // Aspect ratio
-      0.1, // near
+      0.2, // near
       1000 // far
     );
     camera.position.z = 3; // jarak kamera
@@ -74,7 +74,7 @@ const Hero3D = () => {
     <div
       ref={mountRef}
       className="w-full h-[400px] max-mobile:h-[250px]"
-      style={{ perspective: "1000px", position:"relative" }}
+      style={{ position:"relative" }}
     />
   );
 };

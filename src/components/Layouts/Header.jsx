@@ -6,12 +6,11 @@ import Links from '../Ui/Links'
 import NavigationIcon from './NavigationIcon'
 
 const Header = () => {
-  const { openNav, toggleNav, handleNavigation } = useResponsiveNavbar()
+  const { openNav, toggleNav } = useResponsiveNavbar()
   useFeatherIcons()
-  document.addEventListener('click', handleNavigation)
 
   return (
-    <header id='nav-container' className='flex justify-between items-center bg-neutral-800 w-full px-3 shadow-xl z-50 fixed'>
+    <header className='flex justify-between items-center bg-neutral-800 w-full px-3 shadow-xl z-50 fixed'>
       <div className='mx-3 max-tablet:mx-6 max-mobile:mx-1'>
         <a href="#" className='flex gap-4'>
           <img className='w-16 max-tablet:w-12 max-mobile:w-10' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
@@ -19,7 +18,7 @@ const Header = () => {
         </a>
         </div>
       <Nav>
-          <div className={`md:container md:flex md:justify-end md:items-center md:static md:gap-10 max-tablet:flex max-tablet:flex-col top-full justify-evenly items-center max-tablet:h-dvh max-tablet:w-8/12 bg-neutral-800 rounded-e-xl absolute p-[1rem] ${!openNav ? "-left-full" : "left-0"} z-10 max-tablet:gap-2 max-tablet:shadow-xl max-tablet:text-base transition-all duration-100 ease-in-out delay-75`}>
+          <div className={`nav-container md:container md:flex md:justify-end md:items-center md:static md:gap-10 max-tablet:flex max-tablet:flex-col top-full justify-evenly items-center max-tablet:h-dvh max-tablet:w-8/12 bg-neutral-800 rounded-e-xl absolute p-[1rem] ${!openNav ? "-left-full" : "left-0"} z-10 max-tablet:gap-2 max-tablet:shadow-xl max-tablet:text-base transition-all duration-100 ease-in-out delay-75`}>
           <a className='text-lg font-semibold  text-white hover:text-indigo-300 hover:border-b-4 hover:border-b-indigo-300 hover:rounded-sm   focus:text-indigo-300 focus:border-b-4 focus:border-b-indigo-300 focus:rounded-sm transition-all  ease-in-out' href="#about">About</a>
         <a className='text-lg font-semibold  text-white hover:text-indigo-300 hover:border-b-4 hover:border-b-indigo-300 hover:rounded-sm   focus:text-indigo-300 focus:border-b-4 focus:border-b-indigo-300 focus:rounded-sm 
          transition-all ease-in-out' href="#skill">Skill</a>
@@ -31,8 +30,8 @@ const Header = () => {
             </div>
         </div>
       </Nav>
-        <Button classname="text-indigo-400 md:hidden max-tablet:block cursor-pointer mx-2" type="button" onClick={ toggleNav }>
-   <i id='icon-menu' className="size-9/12" data-feather="menu"></i>
+        <Button classname="icon-menu text-indigo-300 md:hidden max-tablet:block cursor-pointer mx-2" type="button" onClick={ toggleNav }>
+   <i className="size-9/12" data-feather="menu"></i>
       </Button>
     </header>
   )
