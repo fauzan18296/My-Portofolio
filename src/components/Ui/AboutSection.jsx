@@ -12,7 +12,7 @@ const AboutSection = () => {
             myBiodata.length > 0 && myBiodata.map((biodata, i) => {
             return (
               <div key={i} className="flex flex-row items-center justify-evenly mt-10 gap-20 max-mobile:flex-col">
-                <img className="size-2/6 object-cover rounded-2xl max-mobile:size-2/5" src={biodata.imageProfile} />
+                <img className="size-2/6 object-contain rounded-2xl max-mobile:size-2/5" src={biodata.imageProfile} />
                 <div className="text-xl space-y-10 max-mobile:space-y-6 max-mobile:w-5/6 max-mobile:text-base w-full">
                   <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Name:</span> {biodata.nama}</p>
                   <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Date of birth:</span> {biodata.dateOfBirth}</p>
