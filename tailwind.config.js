@@ -12,11 +12,18 @@ export default {
       },
       fontFamily: {
         "Poppins": ["Poppins", "sans-serif"],
-        "Titillium": ["Titillium", "sans-serif"],
+        "Titillium": ["Titillium Web"],
+        "Gloria": ["Gloria Hallelujah", "sans-serif"]
       },
-      backgroundImage: {
-        "custom-gradient": "linear-gradient(to bottom,to right #4c1d95,to right #f9a8d4,to right #dc2626 ,to right #FFC107)",
-      }
+      keyframes: {
+        rotateImg: {
+       '0%':   { transform: 'rotateY(0deg) translateZ(120px) rotateY(0deg)' },
+    '100%': { transform: 'rotateY(360deg) translateZ(120px) rotateY(-180deg)' },
+        }
+      },
+      animation: {
+        rotateImg: "rotateImg 4s linear infinite" 
+      },
     },
   },
   plugins: [],

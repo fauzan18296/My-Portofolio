@@ -1,19 +1,20 @@
 import Header from '../components/Layouts/Header'
 import HeroSection from '../components/Ui/HeroSection'
-import Button from '../components/Ui/Button'
+import AboutSection from '../components/Ui/AboutSection'
+import SkillsSection from '../components/Ui/SkillsSection'
+import ProjectsSection from '../components/Ui/ProjectsSection'
 import { Typewriter } from 'react-simple-typewriter'
-import { useHrefEMailTo } from '../hooks/useHrefEMailTo'
+import Links from '../components/Ui/Links'
 
 const WebPage = () => {
   const Introduction = ["Ahmad Fauzan", "a Programmer", "a Fresh Graduates"]
-  const handleBtnLocate  = useHrefEMailTo()
 
   return (
-    <>
-    <Header />
+    <div className='bg-neutral-800 text-white'>
+      <Header />
       <HeroSection>
-        <div className='mx-6 text-md py-10'>
-          <h1 className='text-black text-xl max-tablet:text-md'>Hello, I am <span className='text-indigo-400'>
+        <div className='mx-6 text-base py-10'>
+          <h1 className='text-white -tracking-tighter font-bold font-Poppins text-xl max-mobile:text-base'>Hello, I am <span className='text-indigo-300 font-bold font-Gloria'>
             <Typewriter
               words={Introduction}
               loop={false}
@@ -22,11 +23,14 @@ const WebPage = () => {
               cursorBlinking={"_"}
               delaySpeed={1000}
           /></span></h1>
-          <p className='max-tablet:text-md'>On this website I will share information about my skills, about me, information about the website projects I have created in front-end development, and etc. Then i will work on my personal project and also will share it here as my portfolio.</p>
-           <Button classname='flex bg-indigo-400 px-2 py-1 text-white rounded-md shadow-md mt-2 max-tablet:text-md' onClick={handleBtnLocate}>Hire Me!</Button>
+          <p className='max-tablet:text-base max-mobile:text-base text-balance -tracking-tight'>On this website I will share information about my skills, about myself, information about website projects that I have created in front-end development, and other projects. Then I will work on my personal projects and will also share them here as my portfolio.</p>
+          <Links classname='font-Poppins font-semibold max-tablet:text-base tracking-widest flex justify-center items-center md:text-md relative w-28 bg-indigo-400 px-2 py-1  text-white rounded-md shadow-md mt-2 max-tablet:text-md hover:bg-indigo-400 focus:bg-indigo-500  active:bg-indigo-500' href='mailto:fauzan18296@gmail.com'>Hire Me!</Links>
         </div>
       </HeroSection>
-      </>
+      <AboutSection /> 
+        <SkillsSection />
+        <ProjectsSection/>
+      </div>
     )
 }
 
