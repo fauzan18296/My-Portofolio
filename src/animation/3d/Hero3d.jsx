@@ -8,7 +8,8 @@ import HeroImage from "../../assets/images/Img-Hero-Section/Hero_Section.avif";
 
 
 const Hero3D = () => { 
-  const mountRef = /** @type {MountRef} */  (useRef(null));
+  /** @type {MountRef} */ 
+  const mountRef =  useRef(null);
 
   useEffect(() => {
     // === 1. SETUP SCENE ===
