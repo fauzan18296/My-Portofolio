@@ -1,9 +1,14 @@
+/**  
+ * @typedef {Function} Hero3D
+ * @typedef {import("react").RefObject<HTMLDivElement>} MountRef
+*/ 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import HeroImage from "../../assets/images/Img-Hero-Section/Hero_Section.avif";
 
-const Hero3D = () => {
-  const mountRef = useRef(null);
+
+const Hero3D = () => { 
+  const mountRef = /** @type {MountRef} */  (useRef(null));
 
   useEffect(() => {
     // === 1. SETUP SCENE ===
@@ -65,7 +70,9 @@ const Hero3D = () => {
 
     // === 8. CLEANUP ===
     return () => {
+      if(mountRef.current && renderer.domElement) {
       mountRef.current.removeChild(renderer.domElement);
+      }
       window.removeEventListener("resize", handleResize);
     };
   }, []);

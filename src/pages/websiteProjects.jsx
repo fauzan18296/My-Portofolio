@@ -31,13 +31,14 @@ const websiteProjects = () => {
                 return (
                   <div className='mt-5' key={project.id}>
                     <img src={project.image} />
-                    <h2 className='text-2xl max-mobile:text-xl font-semibold text-indigo-300'>{project.name}</h2>
+                    <h2 className='text-2xl max-mobile:text-xl font-semibold mt-3 max-mobile:mt-2 text-indigo-300'>{project.name}</h2>
                     <p className='text-base'><span className='text-base font-semibold'>Description: </span>{project.description}</p>
-                    <div className='flex items-center text-base text-balance'>
-                      <Link to={project.repository}><span className='text-base font-semibold'>Repository: </span>{project.repository}</Link>
-                    </div>
-                    <div className='flex items-center text-base text-balance'>
-                      <Link to={project.demoWebsite}><span className='text-base font-semibold'>Demo: </span>{project.demoWebsite}</Link>
+                    <div className='flex justify-center items-center gap-2 max-mobile:mt-3'>
+                      <Link to={project.repository}><NavigationIcon classname="size-7 max-mobile:size-5 mx-auto" icon="github" />
+                     </Link>
+                      <Link to={project.demoWebsite}> 
+                      <NavigationIcon classname="size-7 max-mobile:size-5 mx-auto" icon="globe" />
+                      </Link>
                     </div>
                   </div>
                 )
