@@ -1,21 +1,29 @@
-import myImg from "../../assets/images/Img-About-Section/MyImg.avif"
-
+import { myBiodata } from "../../databases/dummyDataMyBiodata.js"
 const AboutSection = () => {
   return (
-    <div id="about" className="flex justify-center items-center min-h-screen  md:max-w-screen-xl max-w-screen-sm flex-col">
-      <h1 className="text-3xl  mt-24 text-indigo-400 font-extrabold">About</h1>
-      <div className="container flex justify-evenly items-center max-mobile:flex-col-reverse overflow-hidden">
-        <div className="relative mt-auto top-0">
-          <img className="max-w-full mx-auto" src={myImg} alt="My Image" />
-          <span className="absolute -bottom-32 left-1/2 -translate-x-1/2 -z-10">
-            <svg className="w-[380px] scale-[1.1]  md:w-[400px]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#818CF8" d="M45.8,-66.4C56.5,-55.2,60.5,-38.1,63.5,-22.2C66.5,-6.4,68.4,8.2,64.8,21.6C61.2,34.9,52,46.9,40.2,54.7C28.5,62.5,14.3,66,-2.6,69.6C-19.4,73.1,-38.8,76.6,-49.7,68.5C-60.6,60.5,-63,40.9,-64.3,24C-65.5,7.1,-65.6,-7.1,-63.6,-23C-61.7,-39,-57.9,-56.6,-46.9,-67.7C-36,-78.9,-18,-83.4,-0.2,-83.1C17.5,-82.8,35,-77.6,45.8,-66.4Z" transform="translate(100 100)" />
-</svg>
-            </span>
+    <div id="about" className="flex justify-center items-center text-white min-h-dvh scroll-m-20 flex-col">
+      <h1 className="text-2xl font-Poppins -tracking-tighter font-bold max-mobile:text-xl">About Me</h1>
+      <div className="container md:mt-2 flex justify-center items-center  flex-col">
+        <div className="flex justify-center items-center mx-6">
+          <p className="block -tracking-tight text-center max-w-full max-mobile:mt-7 text-xl max-mobile:text-base">I'm a front-end developer focused on developing efficient, responsive websites with attractive, modern designs. I enjoy solving problems with clean, readable code.
+          </p>
         </div>
-        <div className="self-center max-w-xl flex-wrap">
-          <p className="block max-w-full max-mobile:mt-7 mx-6 text-xl">My name is Ahmad Fauzan. I am a high school graduate, my profession is a front-end developer. I learned web coding from grade 10 to grade 12 autodidactically. Now I am studying technology namely reactjs, tailwindcss, bootstrap, and redux to create a website for my experience. I am quite good at creating user-friendly designs.</p>
-          </div>
+        {
+            myBiodata.length > 0 && myBiodata.map((biodata, i) => {
+            return (
+              <div key={i} className="flex flex-row items-center justify-evenly mt-10 gap-20 max-mobile:flex-col">
+                <img className="size-2/6 object-contain rounded-2xl max-mobile:size-2/5" src={biodata.imageProfile} />
+                <div className="text-xl space-y-10 max-mobile:space-y-6 max-mobile:w-5/6 max-mobile:text-base w-full">
+                  <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Name:</span> {biodata.nama}</p>
+                  <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Date of birth:</span> {biodata.dateOfBirth}</p>
+                  <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Address:</span> {biodata.address}</p>
+                  <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Email:</span> {biodata.email}</p>
+                  <p className="border-b-2 border-indigo-300 pb-3 rounded-sm"><span className="font-semibold">Hobby:</span> {biodata.hobby}</p>
+                  </div>
+              </div>
+              )
+            })
+          }
       </div>
       </div>
   )
