@@ -26,14 +26,6 @@ const ProjectsSection = () => {
           </div>
           </Link>
           </div>
-          <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-2/4 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
-          <Link to={'/websites/projects'}>
-            <div className='flex justify-center items-center gap-2'>
-              <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
-          </div>
-          </Link>
-          </div>
        </div>
       </div>
     </div>
