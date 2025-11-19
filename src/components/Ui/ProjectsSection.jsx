@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       <div className="container flex justify-center items-center">
         <div className='grid grid-cols-3 max-mobile:grid-cols-1  gap-6 mb-5'>
           <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-2/4 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
+              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
           <Link to={'/websites/projects'}>
             <div className='flex justify-center items-center gap-2'>
               <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
           </Link>
           </div>
           <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-2/4 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
+              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
           <Link to={'/websites/projects'}>
             <div className='flex justify-center items-center gap-2'>
               <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
           </Link>
           </div>
           <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-2/4 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
+              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
           <Link to={'/websites/projects'}>
             <div className='flex justify-center items-center gap-2'>
               <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
