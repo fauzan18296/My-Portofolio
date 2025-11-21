@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import NavigationIcon from '../Layouts/NavigationIcon'
 import { useFeatherIcons } from '../../hooks/config/icons/useIcon.config'
-import imageWebsiteProjects from '../../assets/images/Img-Projects-Section/Image_Website_Projects.avif'
+import { projectSection } from '../../databases/dummyDataProjectSection'
 
 const ProjectsSection = () => {
   useFeatherIcons()
@@ -10,30 +10,20 @@ const ProjectsSection = () => {
       <h1 className="text-2xl text-white font-Poppins -tracking-tighter mb-2 font-bold text-center max-mobile:text-xl">My Projects</h1>
       <div className="container flex justify-center items-center">
         <div className='grid grid-cols-3 max-mobile:grid-cols-1  gap-6 mb-5'>
-          <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
+          {
+            projectSection.length > 0 && projectSection.map((project, index) => {
+              return (
+              <div key={index} className='flex justify-center items-center flex-col'>
+              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={project.img} />
           <Link to={'/websites/projects'}>
             <div className='flex justify-center items-center gap-2'>
-              <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
+              <NavigationIcon classname='max-mobile:size-5' icon='link' /><h1 className='text-xl font-bold max-mobile:text-sm'>{project.title}</h1>
           </div>
           </Link>
           </div>
-          <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
-          <Link to={'/websites/projects'}>
-            <div className='flex justify-center items-center gap-2'>
-              <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
-          </div>
-          </Link>
-          </div>
-          <div className='flex justify-center items-center flex-col'>
-              <img className='w-2/3 max-mobile:w-1/2 rounded-md object-contain mb-3' src={imageWebsiteProjects} />
-          <Link to={'/websites/projects'}>
-            <div className='flex justify-center items-center gap-2'>
-              <NavigationIcon icon='link' /><h1 className='text-xl font-bold max-mobile:text-base'>Websites Projects</h1>
-          </div>
-          </Link>
-          </div>
+              )
+            })
+          }
        </div>
       </div>
     </div>
