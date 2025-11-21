@@ -9,7 +9,7 @@ const ProjectsSection = () => {
     <div id="project" className="flex justify-center items-center flex-col scroll-mt-20 min-h-dvh">
       <h1 className="text-2xl text-white font-Poppins -tracking-tighter mb-2 font-bold text-center max-mobile:text-xl">My Projects</h1>
       <div className="container flex justify-center items-center">
-        <div className='grid grid-cols-3 max-mobile:grid-cols-2 max-mobile:gap-3  gap-6 mb-5'>
+        <div className='grid grid-cols-3 max-mobile:grid-cols-1  gap-6 mb-5'>
           {
             projectSection.length > 0 && projectSection.map((project, index) => {
               return (
