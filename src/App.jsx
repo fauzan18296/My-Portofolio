@@ -1,8 +1,8 @@
-import WebPage from './pages/webPage'
+import { Route } from './router/routes'
 const App = () => {
   return (
     <>
-      <WebPage />
+      <Route />
       </>
   )
 }
