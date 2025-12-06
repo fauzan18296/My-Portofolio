@@ -1,5 +1,31 @@
 import Nav from './Nav'
 import { useFeatherIcons } from '../../hooks/config/icons/useIcon.config'
+<<<<<<< HEAD
+import ResponsiveNavbar from './ResponsiveNavbar'
+import NavigationIcon from './NavigationIcon'
+
+const Header = () => {
+    useFeatherIcons()
+  return (
+    <header className='container flex justify-between items-center bg-white max-w-full px-3 shadow-xl z-50 fixed'>
+      <div className='mx-3 max-tablet:mx-6 max-mobile:mx-1'>
+        <a href="#" className='flex gap-4 '>
+          <img className='w-16 max-tablet:w-12' src="/icon_navbar_brand.avif" alt="Brand Portfolio" />
+           <p className='text-xl self-center font-extrabold font-Poppins max-tablet:text-sm'>Portfolio<span className='text-indigo-400 '>_Fauzan</span></p>
+        </a>
+        </div>
+      <Nav>
+        <a className='text-xl text-indigo-400  font-bold' href="#about">About</a>
+        <a className='text-xl text-indigo-400  font-bold' href="#skill">Skill</a>
+        <a className='text-xl text-indigo-400 font-bold' href="#project">Projects</a>
+      </Nav>
+
+      <NavigationIcon classname='flex items-center rounded-md  text-white  font-bold' icon='github' name='Github' href='https://github.com/fauzan18296' />
+      <NavigationIcon classname='flex items-center rounded-md text-white font-bold' icon='instagram' href='https://www.instagram.com/ahd_fauzan18/' name='Instagram' />
+
+     <ResponsiveNavbar />
+      </header>
+=======
 import { useResponsiveNavbar } from '../../hooks/useResponsiveNavbar'
 import Button from '../Ui/Button'
 import Links from '../Ui/Links'
@@ -34,6 +60,7 @@ const Header = () => {
    <i className="size-9/12" data-feather="menu"></i>
       </Button>
     </header>
+>>>>>>> f0b092300f5f2f91531faea73f5ddcbec25acd93
   )
 }
 
